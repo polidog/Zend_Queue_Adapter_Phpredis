@@ -1,0 +1,9 @@
+.settings
+.buildpath
+.project
+app/tmp/*/*
+!empty
+*.swp
+.DS_Store
+Thumbs.db
+.idea
