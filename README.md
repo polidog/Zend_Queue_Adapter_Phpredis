@@ -1,0 +1,9 @@
+#Zend_Queue_Adapter_Phpredis
+
+Zend_QueueでReidsを使用するためのアダプタです。
+使用するにはZFと、phpredisとredisが必要ですよー。
+
+##使用方法
+いたってシンプルです。
+driverOptionsにportとhostを指定すればいいだけです。
+詳しくはZFのドキュメントを確認してもらえれば大丈夫かと。
