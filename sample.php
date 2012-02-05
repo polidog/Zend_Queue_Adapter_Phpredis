@@ -6,6 +6,8 @@ try {
 	$queue = new Zend_Queue('Phpredis',array(
 		'name' => 'test_queue',
 		'driverOptions' => array(
+			'host' => '127.0.0.1', // default 127.0.0.1
+			'port' => 6379,			// default 6379
 		),
 	));
 	
@@ -20,11 +22,6 @@ try {
 	foreach ( $messages as $message ) {
 		echo $message->body . "\n";
 	}	
-	/*
-	 * job 1
-	 * job 2
-	 */
-	
 	
 } catch ( Zend_Queue_Exception $e ) {
 	echo $e->getMessage();
